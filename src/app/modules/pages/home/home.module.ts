@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home.component';
@@ -18,6 +19,7 @@ import { SharedModulesModule } from '../../shared-modules/shared-modules.module'
  imports: [
    CommonModule,
    SharedModulesModule,
+   FormsModule,
  ],
  exports:[HomeComponent]
 })

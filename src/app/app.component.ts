@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,11 +10,12 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'ets-alexis-front';
 
-  constructor(private router: Router) {}
 
-  get currentRoute(){
-    console.log(this.router.url)
-    return this.router.url
+  constructor(private router: Router, private http: HttpClient) { }
+
+  get currentRoute() {
+    console.log(this.router.url);
+    return this.router.url;
   }
 
 }

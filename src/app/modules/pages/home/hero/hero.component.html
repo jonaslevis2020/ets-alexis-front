@@ -11,18 +11,27 @@
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200">
+            <input class="form-control-sm"
+            type="text"
+            id=""
+            placeholder="username"
+            [(ngModel)]="username">
+          </div>
           <a
             data-aos="fade-up"
             data-aos-delay="200"
             href="#get-started"
             class="btn-get-started"
+            (click)="getUsers()"
             >Commencez</a
           >
         </div>
       </div>
     </div>
   </div>
-
   <div
     id="hero-carousel"
     class="carousel slide"
